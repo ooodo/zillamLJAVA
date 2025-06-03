@@ -1,4 +1,3 @@
-/* الخطوط الأساسية */
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
 * {
@@ -149,7 +148,7 @@ body {
 }
 
 /* شبكة الدروس */
-.lessons-grid {
+#lessons-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
@@ -431,6 +430,28 @@ body {
   background-color: #005a87;
 }
 
+/* الفوتر */
+.footer {
+  background-color: #007bbd;
+  color: white;
+  padding: 1.5rem 0 0.5rem 0;
+  text-align: center;
+  font-weight: 600;
+  user-select: none;
+  box-shadow: inset 0 1px 5px rgb(255 255 255 / 0.3);
+  font-size: 1rem;
+  position: relative;
+  z-index: 0;
+}
+
+.update-note {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #dbe9f4;
+  margin-top: 0.3rem;
+  user-select: none;
+}
+
 /* استجابة الهواتف */
 @media (max-width: 900px) {
   .main-nav ul {
@@ -440,7 +461,7 @@ body {
   .main-nav ul li a {
     font-size: 1rem;
   }
-  .lessons-grid {
+  #lessons-container {
     grid-template-columns: 1fr;
   }
   .contact-buttons {
