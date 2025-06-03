@@ -1,0 +1,453 @@
+/* الخطوط الأساسية */
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  background: #f0f6fc;
+  color: #0d2f57;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* الهيدر */
+.header {
+  background: linear-gradient(90deg, #005a87, #007bbd);
+  padding: 1rem 0;
+  color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0 123 189 / 0.5);
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+/* قائمة التنقل */
+.main-nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+  background-color: rgba(255 255 255 / 0.3);
+  outline: none;
+}
+
+/* القسم الترحيبي */
+.welcome-section {
+  text-align: center;
+  margin: 3rem 0 5rem 0;
+  padding: 2rem 1rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgb(0 123 189 / 0.2);
+  user-select: none;
+}
+
+.welcome-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #00446b;
+}
+
+.welcome-section p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  color: #0066aa;
+}
+
+.btn-primary {
+  background-color: #007bbd;
+  color: white;
+  padding: 0.9rem 2rem;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgb(0 123 189 / 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  user-select: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #005a87;
+  box-shadow: 0 7px 20px rgb(0 80 130 / 0.7);
+  outline: none;
+}
+
+/* قسم الدروس */
+.lessons-section {
+  margin-bottom: 5rem;
+}
+
+.lessons-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #00446b;
+  user-select: none;
+}
+
+/* شبكة الدروس */
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* بطاقة الدرس */
+.lesson-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 0 18px rgb(0 123 189 / 0.15);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.lesson-card:hover {
+  box-shadow: 0 0 30px rgb(0 123 189 / 0.4);
+}
+
+.lesson-icon {
+  font-size: 3rem;
+  color: white;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  user-select: none;
+}
+
+.blue-bg {
+  background-color: #007bbd;
+  box-shadow: 0 0 12px rgb(0 123 189 / 0.6);
+}
+
+/* عنوان الدرس */
+.lesson-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #00446b;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* وصف الدرس */
+.lesson-card p {
+  flex-grow: 0;
+  font-size: 1rem;
+  color: #0d2f57;
+  margin-bottom: 1rem;
+}
+
+/* iframe الفيديو */
+.lesson-card iframe {
+  border-radius: 12px;
+  border: none;
+  height: 180px;
+  width: 100%;
+  box-shadow: 0 0 10px rgb(0 123 189 / 0.3);
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.lesson-card iframe:hover {
+  transform: scale(1.03);
+}
+
+/* قسم الاختبار */
+.quiz-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgb(0 123 189 / 0.2);
+  margin-bottom: 5rem;
+  user-select: none;
+}
+
+.quiz-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #00446b;
+}
+
+.quiz-form {
+  margin-top: 1rem;
+}
+
+.quiz-item {
+  margin-bottom: 1.5rem;
+}
+
+.quiz-item label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #00446b;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.radio-group input[type="radio"] {
+  display: none;
+}
+
+.radio-group label {
+  background: #e7f0fb;
+  color: #007bbd;
+  border-radius: 30px;
+  padding: 0.5rem 1.3rem;
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 2px solid transparent;
+  box-shadow: 0 0 5px rgb(0 123 189 / 0.2);
+}
+
+.radio-group input[type="radio"]:checked + label {
+  background: #007bbd;
+  color: white;
+  border-color: #005a87;
+  box-shadow: 0 0 15px rgb(0 123 189 / 0.7);
+}
+
+/* زر التحقق */
+.quiz-form button.btn-primary {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 220px;
+}
+
+/* نتيجة الاختبار */
+.quiz-result {
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  min-height: 1.5rem;
+  user-select: none;
+}
+
+/* قسم عن الموقع */
+.about-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgb(0 123 189 / 0.2);
+  margin-bottom: 5rem;
+  user-select: none;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #00446b;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #0d2f57;
+  max-width: 800px;
+  line-height: 1.7;
+}
+
+/* قسم التواصل */
+.contact-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgb(0 123 189 / 0.2);
+  margin-bottom: 5rem;
+  user-select: none;
+}
+
+.contact-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #00446b;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-whatsapp,
+.btn-official {
+  flex: 1 1 220px;
+  text-align: center;
+  background-color: #25d366;
+  color: white;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgb(37 211 102 / 0.7);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+}
+
+.btn-official {
+  background-color: #007bbd;
+  box-shadow: 0 5px 15px rgb(0 123 189 / 0.7);
+}
+
+.btn-whatsapp:hover {
+  background-color: #1da851;
+  box-shadow: 0 7px 20px rgb(29 168 81 / 0.85);
+}
+
+.btn-official:hover {
+  background-color: #005a87;
+  box-shadow: 0 7px 20px rgb(0 80 130 / 0.85);
+}
+
+/* الأيقونات داخل الأزرار */
+.material-icons-outlined {
+  font-size: 1.6rem;
+  user-select: none;
+}
+
+/* أزرار عائمة (واتساب والموقع الرسمي) */
+.floating-whatsapp,
+.floating-official {
+  position: fixed;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 9999;
+  user-select: none;
+}
+
+.floating-whatsapp {
+  background-color: #25d366;
+  right: 20px;
+}
+
+.floating-whatsapp:hover {
+  background-color: #1da851;
+}
+
+.floating-official {
+  background-color: #007bbd;
+  right: 90px;
+}
+
+.floating-official:hover {
+  background-color: #005a87;
+}
+
+/* استجابة الهواتف */
+@media (max-width: 900px) {
+  .main-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-nav ul li a {
+    font-size: 1rem;
+  }
+  .lessons-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-buttons {
+    flex-direction: column;
+  }
+  .btn-whatsapp,
+  .btn-official {
+    max-width: 100%;
+  }
+}
