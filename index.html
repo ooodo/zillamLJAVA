@@ -46,126 +46,16 @@
   <section id="lessons" class="lessons-section">
     <h2><span class="material-icons-outlined">school</span> الدروس الأساسية</h2>
     <div class="lessons-grid">
-
-      <!-- درس 1 -->
-      <article class="lesson-card">
-        <div class="lesson-icon blue-bg"><span class="material-icons-outlined">play_circle_filled</span></div>
-        <h3>مقدمة إلى جافا سكريبت</h3>
-        <p>تعرف على أساسيات جافا سكريبت وأهميتها في تطوير الويب.</p>
-        <iframe src="https://www.youtube.com/embed/W6NZfCO5SIk" title="مقدمة إلى جافا سكريبت" allowfullscreen></iframe>
-      </article>
-
-      <!-- درس 2 -->
-      <article class="lesson-card">
-        <div class="lesson-icon blue-bg"><span class="material-icons-outlined">play_circle_filled</span></div>
-        <h3>المتغيرات وأنواع البيانات</h3>
-        <p>شرح المتغيرات وأنواع البيانات المختلفة في جافا سكريبت.</p>
-        <iframe src="https://www.youtube.com/embed/1Rs2ND1ryYc" title="المتغيرات وأنواع البيانات" allowfullscreen></iframe>
-      </article>
-
-      <!-- درس 3 -->
-      <article class="lesson-card">
-        <div class="lesson-icon blue-bg"><span class="material-icons-outlined">play_circle_filled</span></div>
-        <h3>الدوال (Functions)</h3>
-        <p>تعلم كيفية كتابة الدوال واستخدامها.</p>
-        <iframe src="https://www.youtube.com/embed/eGz9DS-aIeY" title="الدوال في جافا سكريبت" allowfullscreen></iframe>
-      </article>
-
-      <!-- درس 4 -->
-      <article class="lesson-card">
-        <div class="lesson-icon blue-bg"><span class="material-icons-outlined">play_circle_filled</span></div>
-        <h3>الشروط (If Statements)</h3>
-        <p>التعامل مع الشروط والتحكم في سير البرنامج.</p>
-        <iframe src="https://www.youtube.com/embed/7m2f5wJ8VQ8" title="الشروط في جافا سكريبت" allowfullscreen></iframe>
-      </article>
-
-      <!-- درس 5 -->
-      <article class="lesson-card">
-        <div class="lesson-icon blue-bg"><span class="material-icons-outlined">play_circle_filled</span></div>
-        <h3>الحلقات (Loops)</h3>
-        <p>فهم الحلقات وكيفية تكرار الأوامر.</p>
-        <iframe src="https://www.youtube.com/embed/6d9xS8-MBs0" title="الحلقات في جافا سكريبت" allowfullscreen></iframe>
-      </article>
-
-      <!-- درس 6 -->
-      <article class="lesson-card">
-        <div class="lesson-icon blue-bg"><span class="material-icons-outlined">play_circle_filled</span></div>
-        <h3>الكائنات (Objects)</h3>
-        <p>تعلم مفهوم الكائنات وكيفية استخدامها.</p>
-        <iframe src="https://www.youtube.com/embed/9J6MZ4CkqQ8" title="الكائنات في جافا سكريبت" allowfullscreen></iframe>
-      </article>
-
-      <!-- درس 7 -->
-      <article class="lesson-card">
-        <div class="lesson-icon blue-bg"><span class="material-icons-outlined">play_circle_filled</span></div>
-        <h3>التعامل مع DOM</h3>
-        <p>كيفية التفاعل مع عناصر صفحة الويب باستخدام جافا سكريبت.</p>
-        <iframe src="https://www.youtube.com/embed/0ik6X4DJKCc" title="التعامل مع DOM" allowfullscreen></iframe>
-      </article>
-
-      <!-- درس 8 -->
-      <article class="lesson-card">
-        <div class="lesson-icon blue-bg"><span class="material-icons-outlined">play_circle_filled</span></div>
-        <h3>الأحداث (Events)</h3>
-        <p>التعامل مع الأحداث المختلفة مثل النقر والتحميل.</p>
-        <iframe src="https://www.youtube.com/embed/o6bBRtXgHog" title="الأحداث في جافا سكريبت" allowfullscreen></iframe>
-      </article>
-
-      <!-- درس 9 -->
-      <article class="lesson-card">
-        <div class="lesson-icon blue-bg"><span class="material-icons-outlined">play_circle_filled</span></div>
-        <h3>الوعد (Promises)</h3>
-        <p>تعلم البرمجة غير المتزامنة باستخدام الوعد.</p>
-        <iframe src="https://www.youtube.com/embed/DHvZLI7Db8E" title="الوعد في جافا سكريبت" allowfullscreen></iframe>
-      </article>
-
-      <!-- درس 10 -->
-      <article class="lesson-card">
-        <div class="lesson-icon blue-bg"><span class="material-icons-outlined">play_circle_filled</span></div>
-        <h3>Async/Await</h3>
-        <p>أسلوب حديث للتعامل مع البرمجة غير المتزامنة بسهولة.</p>
-        <iframe src="https://www.youtube.com/embed/V_Kr9OSfDeU" title="Async/Await" allowfullscreen></iframe>
-      </article>
-
+      <!-- سيتم توليد الدروس جافاسكريبت ديناميكياً بواسطة جافاسكريبت -->
+      <div id="lessons-container"></div>
     </div>
   </section>
 
-  <!-- قسم الاختبار -->
+  <!-- قسم الاختبارات -->
   <section id="quiz" class="quiz-section">
-    <h2><span class="material-icons-outlined">quiz</span> اختبار إملائي تفاعلي</h2>
+    <h2><span class="material-icons-outlined">quiz</span> اختبارات إملائية تفاعلية</h2>
     <p>اختر الإجابة الصحيحة لكل سؤال:</p>
-    <form id="quiz-form" class="quiz-form">
-
-      <div class="quiz-item">
-        <label for="q1">1. لغة جافا سكريبت تستخدم في تطوير _____ الويب.</label>
-        <div class="radio-group">
-          <input type="radio" id="q1a" name="q1" value="مواقع" required />
-          <label for="q1a">مواقع</label>
-
-          <input type="radio" id="q1b" name="q1" value="مكياج" />
-          <label for="q1b">مكياج</label>
-
-          <input type="radio" id="q1c" name="q1" value="طعام" />
-          <label for="q1c">طعام</label>
-        </div>
-      </div>
-
-      <div class="quiz-item">
-        <label for="q2">2. جافا سكريبت تكتب عادة في ملفات _____.</label>
-        <div class="radio-group">
-          <input type="radio" id="q2a" name="q2" value=".js" required />
-          <label for="q2a">.js</label>
-
-          <input type="radio" id="q2b" name="q2" value=".exe" />
-          <label for="q2b">.exe</label>
-
-          <input type="radio" id="q2c" name="q2" value=".doc" />
-          <label for="q2c">.doc</label>
-        </div>
-      </div>
-
-      <button type="submit" class="btn-primary">تحقق من الإجابة</button>
-    </form>
+    <form id="quiz-form" class="quiz-form"></form>
     <p id="quiz-result" class="quiz-result"></p>
   </section>
 
@@ -194,7 +84,11 @@
 
 </main>
 
-<!-- أزرار عائمة للواتساب والموقع الرسمي -->
+<footer class="footer">
+  <p>جميع الحقوق محفوظة © ظلان 2025</p>
+</footer>
+
+<!-- أزرار عائمة (واتساب والموقع الرسمي) -->
 <a href="https://wa.me/967774722964" class="floating-whatsapp" target="_blank" title="تواصل عبر واتساب">
   <span class="material-icons-outlined">whatsapp</span>
 </a>
